@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Aadi</title>
+    <link rel="icon" type="image/x-icon" href="auwhite.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="headerfooter.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="socialbuttons.css">
+    <link rel="stylesheet" href="loader.css">
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        background-image: linear-gradient(180deg, #212121, #171717);
+      }
+
+      h2 {
+        color: #66DA43;
+      }
+
+      h1 {
+        color: #66DA43;
+      }
+
+      a#herelink {
+        color: white;
+        transition: 0.2s;
+      }
+
+      a#herelink:hover {
+        color: #66DA43;
+      }
+
+      .card {
+       width: 60%;
+       height: auto;
+       background-image: radial-gradient(#171717, #212121);
+       transition: 0.2s;
+       box-shadow: 15px 15px 30px rgb(0, 0, 0),
+                   -15px -15px 30px rgb(58, 58, 58);
+      }
+
+      </style>
+    <script>
+      window.onload = function() {
+        document.body.style.opacity = 1;
+      };
+      window.addEventListener("load", function() {
+        setTimeout(function(){
+          var loader = document.querySelector(".loader-wrapper");
+          loader.classList.add("fade-out");
+        }, 750); // adjust the delay time as needed
+      });
+      /* Get the navigation bar element */
+      var nav = document.querySelector('.topnav');
+
+      /* Get the hamburger menu button element */
+      var icon = document.querySelector('.icon');
+
+      /* Add a click event listener to the hamburger menu button */
+      icon.addEventListener('click', function() {
+        /* Toggle the responsive class on the navigation bar */
+        nav.classList.toggle('responsive');
+      });
+    </script>
+  </head>
+  <body>
+    <div class="loader-wrapper" id="load">
+      <div class="loader">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+    </div>
+    <font color = "white">
+
+      <div class="topnav">
+        <br>
+        <table width = 100% align="center" cellpadding="5">
+          <tr>
+            <td>
+              <a href="home.html" class="image-link">
+                <img src="auwhite.png" height="35" class="image"> | <B>Aadi Umrani</B> | Biomedical Engineering Student
+              </a>
+
+            </td>
+            <td align="right">
+              <a href="home.html" class="active">Home</a>
+              <a href="projects.html">Projects</a>
+              <a href="experience.html">Experiences</a>
+              <a href="chat.html">Chat</a>
+            </td>
+          </tr>
+        </table>
+        <br>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+    <center><div class="card">
+          <table width = 100% align = "center" cellpadding = 20>
+            <tr>
+              <td align="Center">
+                <br>
+                <img src="myImage.jpg" width = 80%>
+                <br>
+                <br>
+                <div class="socialbar">
+                <a href="https://github.com/aadium" class="fa fa-github" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/aadi-umrani/" class="fa fa-linkedin" target="_blank"></a>
+                <a href="https://www.instagram.com/aadixum/" class="fa fa-instagram" target="_blank"></a>
+                <a href="https://www.facebook.com/aadxxum.2004/" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://twitter.com/um_aadi" class="fa fa-twitter" target="_blank"></a>
+                </div>
+              </td>
+              <td>
+                <font size="72" face="arial" color = #66DA43><b>Hi, I'm Aadi</b></font>
+                <p><i><h4>I am a <b>First year Biomedical Engineering</b> student at the <b>University of Waterloo</b>, currently in my <b>1B term</b>.</h4></i></p>
+                <a href="CV_AadiUmrani.pdf" target="_blank"><button>Download CV</button></a>
+              </td>
+            </tr>
+          </table>
+        </div></center>
+
+          <br>
+
+          <div class="w3-card-4">
+          <table align = "center" width = 75%>
+            <tr>
+              <td>
+                <h2>A little bit about myself</h2>
+                My journey in the field of Biomedical Engineering started off in a very unusual way. Ever since I started high school, my intention was to make a career in the field of medicine, as a doctor. Very soon, I found myself attending doctor shadowing sessions, and I started gaining a deeper understanding of the role, and the procedures a doctor has to perform. At the same time, I gained interest in the techniques, machines, and equipment used by doctors, and very soon, I was in a dilemma, whether to choose medicine or biomedical engineering as a career option. Ultimately, I opted for Biomedical Engineering, as it embodies a synergy between engineering and medicine, utilizing engineering principles to create solutions for medical problems. My interest lies in the innovative and progressive nature of this field, resolving contemporary medical issues for the benefit of future generations.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3><b>My hobbies</b></h3>
+                <ul>
+                  <li>My foremost hobby, which has remained constant since my childhood, is reading informative literature. I have a natural inclination towards learning about unfamiliar subjects, which is why reading informative material has always been my top hobby. Whether it be a book, magazine, tabloid, or newspaper article, I indulge in reading anything that adds to my knowledge base. While I do occasionally read entertaining literature, I seldom read novels.</li>
+                  <li>In addition to my passion for reading, I possess a keen interest in sports, particularly tennis. Playing and observing tennis has been a favorite pastime of mine since my middle school days, and I have represented my school team in various competitions. Aside from tennis, I engage in football (soccer) and squash for recreational purposes. While I am not an avid follower, I do occasionally indulge in watching cricket, football, and Formula One.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2>Please feel free to get in touch with me.</h2>
+                <ul>
+                  <li>My e-mail inbox is always open in case you personally want to get in touch with me.</li>
+                  <li>You can also chat with me <a href="chat.html" id="herelink">here</a>.</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+    <div class="footer">
+      <font color="white">
+      <table align = "center" width = 95%>
+        <tr>
+          <td>
+            <h4><font color=#66DA43> E-Mail I.D.</font></h4>
+            <font size="2">
+            <p><a href="mailto:apumrani@uwaterloo.ca">apumrani@uwaterloo.ca</a> <font color = #66DA43><b> | </b></font> <a href="mailto:aadi.p.um@gmail.com">aadi.p.um@gmail.com</a></p>
+            </font>
+          </td>
+          <td align="right">
+            <p>Number of Visitors:</p>
+            <div id="sfcga21du9r6nr4be5xph2qdcgnpy64yyh4"></div><script type="text/javascript" src="https://counter4.optistats.ovh/private/counter.js?c=ga21du9r6nr4be5xph2qdcgnpy64yyh4&down=async" async></script><br><noscript><img src="https://counter4.optistats.ovh/private/freecounterstat.php?c=ga21du9r6nr4be5xph2qdcgnpy64yyh4" border="0" title="free counters" alt="free counters"></noscript>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

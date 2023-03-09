@@ -1,0 +1,112 @@
+html, body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    }
+    .main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(180deg, #212121, #171717);
+    }
+    form {
+    padding: 25px;
+    margin: 25px;
+    background: #171717;
+    box-shadow: 15px 15px 30px rgb(0, 0, 0),
+                   -15px -15px 30px rgb(58, 58, 58);
+    }
+    label {
+    margin-bottom: 10px;
+    }
+    
+    input[type="text"], 
+    input[type="tel"], 
+    input[type="url"] {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #66DA43;
+    outline: none;
+    background-color: #171717; /* set default background color */
+    color: white;
+    }
+    
+    input[type="text"]:focus, 
+    input[type="tel"]:focus, 
+    input[type="url"]:focus {
+    border: 1px solid #66DA43;
+    background-color: #171717; /* set background color on focus */
+    color: white;
+    }
+    input, textarea {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #66DA43;
+    outline: none;
+    }
+    textarea {
+    background-color: #171717;
+    color: white;
+    }
+    input::placeholder {
+    color: #666;
+    }
+    button {
+    width: 96%;
+    padding: 10px;
+    border: none;
+    background: #66DA43; 
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    transition: 0.2s;
+    }
+
+    button {
+        font-family: inherit;
+        font-size: 20px;
+        background: #66DA43;
+        color: black;
+        padding: 0.7em 1em;
+        padding-left: 0.9em;
+        display: flex;
+        align-items: center;
+        border: none;
+        overflow: hidden;
+        transition: all 0.2s;
+        width: 30%;
+      }
+      
+      button span {
+        display: block;
+        margin-left: 0.3em;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      button svg {
+        display: block;
+        transform-origin: center center;
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      button:hover svg {
+        transform: translateX(1.5em) rotate(45deg) scale(1.1);
+      }
+      
+      button:hover span {
+        transform: translateX(15em);
+      }
+      
+      button:active {
+        transform: scale(0.9);
+      }
+      
+    @media (min-width: 568px) {
+    .main-block {
+    flex-direction: row;
+    }
+    }
