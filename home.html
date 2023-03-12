@@ -48,28 +48,36 @@
                    -15px -15px 30px rgb(58, 58, 58);
       }
 
+      @media screen and (max-width: 700px) {
+        
+        .auimage {display: none;}
+        .card {
+          width: 90%;
+        }
+
+      }
+
       </style>
     <script>
       window.onload = function() {
         document.body.style.opacity = 1;
       };
+
       window.addEventListener("load", function() {
         setTimeout(function(){
           var loader = document.querySelector(".loader-wrapper");
           loader.classList.add("fade-out");
         }, 750); // adjust the delay time as needed
       });
-      /* Get the navigation bar element */
-      var nav = document.querySelector('.topnav');
 
-      /* Get the hamburger menu button element */
-      var icon = document.querySelector('.icon');
-
-      /* Add a click event listener to the hamburger menu button */
-      icon.addEventListener('click', function() {
-        /* Toggle the responsive class on the navigation bar */
-        nav.classList.toggle('responsive');
-      });
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
     </script>
   </head>
   <body>
@@ -83,8 +91,7 @@
     <font color = "white">
 
       <div class="topnav">
-        <br>
-        <table width = 100% align="center" cellpadding="5">
+        <table width = 100% align="center">
           <tr>
             <td>
               <a href="home.html" class="image-link">
@@ -97,12 +104,13 @@
               <a href="projects.html">Projects</a>
               <a href="experience.html">Experiences</a>
               <a href="chat.html">Chat</a>
+              <a href="mobilmenu.html" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>                                        
             </td>
           </tr>
         </table>
-        <br>
       </div>
-      <br>
       <br>
       <br>
       <br>
@@ -113,7 +121,9 @@
             <tr>
               <td align="Center">
                 <br>
-                <img src="images/myImage.jpg" width = 80%>
+                <div class = "auimage">
+                  <img src="images/myImage.jpg" width = 80%>
+                </div>
                 <br>
                 <br>
                 <div class="socialbar">
@@ -135,7 +145,6 @@
 
           <br>
 
-          <div class="w3-card-4">
           <table align = "center" width = 75%>
             <tr>
               <td>
@@ -162,8 +171,6 @@
               </td>
             </tr>
           </table>
-          </div>
-          <br>
           <br>
           <br>
           <br>

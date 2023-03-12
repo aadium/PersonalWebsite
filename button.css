@@ -10,7 +10,27 @@ button {
     transition: 0.2s;
   }
 
+  button#menu {
+    background-color:#66DA43;
+    border: none;
+    color: black;
+    width: 200px;
+    height: 75px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.2s;
+  }
+
   button:hover{
+    background-color: black;
+    color: #66DA43;
+    transform: scale(1.1);
+  }
+
+  button#menu:hover{
     background-color: black;
     color: #66DA43;
     transform: scale(1.1);

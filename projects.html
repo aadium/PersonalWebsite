@@ -34,6 +34,12 @@
       color: #66DA43;
     }
 
+    @media screen and (max-width: 700px) {
+        
+        img {display: none;}
+
+      }
+
     .card {
        width: 85%;
        height: auto;
@@ -48,6 +54,7 @@
     window.onload = function() {
       document.body.style.opacity = 1;
     };
+
     window.addEventListener("load", function() {
       setTimeout(function(){
         var loader = document.querySelector(".loader-wrapper");
@@ -55,6 +62,14 @@
       }, 750); // adjust the delay time as needed
     });
 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
   </script>
 
 </head>
@@ -68,26 +83,35 @@
   </div>
   <font color = "White">
     <div class="topnav">
-      <br>
       <table width = 100% align="center" cellpadding="5">
         <tr>
           <td>
             <a href="home.html" class="image-link">
               <img src="images/auwhite.png" height="35" class="image"> | <B>Aadi Umrani</B> | Biomedical Engineering Student
             </a>
-            </td>
-            <td align="right">
-              <a href="home.html">Home</a>
-              <a href="projects.html" class="active">Projects</a>
-              <a href="experience.html">Experiences</a>
-             <a href="chat.html">Chat</a>
+
+          </td>
+          <td align="right">
+            <a href="home.html">Home</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="experience.html">Experiences</a>
+            <a href="chat.html">Chat</a>
+            <table>
+              <tr>
+                <td>
+                  <a href="home.html" class="icon"><i class="fa fa-home"></i></a>
+                </td>
+                <td>
+                  <a href="mobilmenu.html" class="icon">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </td>
+              </tr>
+            </table>                      
           </td>
         </tr>
       </table>
-      <br>
     </div>
-  <br>
-  <br>
   <br>
   <br>
   <br>

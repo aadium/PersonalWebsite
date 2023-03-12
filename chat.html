@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Aadi</title>
+    <title>Chat</title>
     <link rel="icon" type="image/x-icon" href="images/auwhite.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -30,17 +30,33 @@
         color: #66DA43;
       }
 
+      @media screen and (max-width: 700px) {
+        
+        img {display: none;}
+
+      }
+
       </style>
     <script>
       window.onload = function() {
         document.body.style.opacity = 1;
       };
+
       window.addEventListener("load", function() {
         setTimeout(function(){
           var loader = document.querySelector(".loader-wrapper");
           loader.classList.add("fade-out");
         }, 750); // adjust the delay time as needed
       });
+
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
     </script>
 
   </head>
@@ -55,26 +71,36 @@
   </div> 
     <font color = "white">
         
-        <div class="topnav">
-        <br>
+      <div class="topnav">
         <table width = 100% align="center" cellpadding="5">
-            <tr>
+          <tr>
             <td>
               <a href="home.html" class="image-link">
                 <img src="images/auwhite.png" height="35" class="image"> | <B>Aadi Umrani</B> | Biomedical Engineering Student
               </a>
+
             </td>
             <td align="right">
-                <a href="home.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="experience.html">Experiences</a>
-                <a href="chat.html" class="active">Chat</a>
+              <a href="home.html">Home</a>
+              <a href="projects.html">Projects</a>
+              <a href="experience.html">Experiences</a>
+              <a href="chat.html" class="active">Chat</a>
+              <table>
+                <tr>
+                  <td>
+                    <a href="home.html" class="icon"><i class="fa fa-home"></i></a>
+                  </td>
+                  <td>
+                    <a href="mobilmenu.html" class="icon">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </td>
+                </tr>
+              </table>                       
             </td>
-            </tr>
+          </tr>
         </table>
-        <br>
-        </div>
-    <div class="w3-card-4">
+      </div>
         <center>
         <div class="main-block">
           <img src="images/chat.png" width=7%>
@@ -121,7 +147,6 @@
             </form>
             <img src="images/chat.png" width=7%>
           </div>
-        </div>
     </center>
 
     <div class="footer">
