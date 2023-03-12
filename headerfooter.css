@@ -34,7 +34,7 @@
     display: none;
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 1000px) {
     .topnav a {display: none;}
 
     .topnav a.home {
