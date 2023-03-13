@@ -1,6 +1,6 @@
 button {
     background-color:#66DA43;
-    border: none;
+    border: 2px solid black;
     color: black;
     padding: 15px 32px;
     text-align: center;
@@ -10,34 +10,33 @@ button {
     transition: 0.2s;
   }
 
-  button#menu {
-    background-color:#66DA43;
+  button#mobilmenu {
+    background-color:#66da4300;
     border: none;
-    color: black;
-    width: 200px;
+    color: #ffffff;
+    width: 450px;
     height: 75px;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 35px;
     transition: 0.2s;
   }
 
   button:hover{
     background-color: black;
+    border: 2px solid #66DA43;
     color: #66DA43;
-    transform: scale(1.1);
   }
 
-  button#menu:hover{
-    background-color: black;
+  button#mobilmenu:hover{
+    background-color:#66da4300;
     color: #66DA43;
-    transform: scale(1.1);
   }
 
   button:active {
     background-color: #66DA43;
+    border: 2px solid black;
     color: black;
-    transform: scale(0.9);
   }
