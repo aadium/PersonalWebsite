@@ -1,78 +1,78 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #151515b0;
-    backdrop-filter: blur(15px);
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  background-color: #151515b0;
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.2s;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #66DA43;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: #66DA43;
+  font-weight: bold;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .topnav a {display: none;}
+
+  .topnav a.home {
+    float: left;
+    display: block;
   }
 
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    transition: 0.2s;
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
 
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    color: #66DA43;
+  .topnav {
+    padding: 0%;
   }
+}
 
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    color: #66DA43;
-    font-weight: bold;
-  }
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #151515b0;
+  backdrop-filter: blur(12px);
+}
 
-  .topnav .icon {
-    display: none;
-  }
+/* Style the links inside the footer */
+.footer a {
+  color: white;
+  transition: 0.2s;
+}
 
-  @media screen and (max-width: 1000px) {
-    .topnav a {display: none;}
+/* Change the color of links on hover */
+.footer a:hover {
+  color: #66DA43;
+}
 
-    .topnav a.home {
-      float: left;
-      display: block;
-    }
-
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-
-    .topnav {
-      padding: 0%;
-    }
-  }
-
-  .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #151515b0;
-    backdrop-filter: blur(12px);
-  }
-  
-  /* Style the links inside the footer */
-  .footer a {
-    color: white;
-    transition: 0.2s;
-  }
-
-  /* Change the color of links on hover */
-  .footer a:hover {
-    color: #66DA43;
-  }
-  
-  /* Add a color to the active/current link */
-  .footer a.active {
-    color: #66DA43;
-    font-weight: bold;
-  }
+/* Add a color to the active/current link */
+.footer a.active {
+  color: #66DA43;
+  font-weight: bold;
+}
