@@ -1,6 +1,6 @@
 button {
     background-color:#66DA43;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0);
     color: black;
     padding: 15px 32px;
     text-align: center;
@@ -25,7 +25,7 @@ button {
   }
 
   button:hover{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     border: 2px solid #66DA43;
     color: #66DA43;
   }
@@ -37,6 +37,6 @@ button {
 
   button:active {
     background-color: #66DA43;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0);
     color: black;
   }
