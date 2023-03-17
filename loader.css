@@ -19,14 +19,14 @@
   }
 
   .loader {
-    width: 120px;
-    height: 120px;
+    width: 112px;
+    height: 112px;
   }
   
   .box1,
   .box2,
   .box3 {
-    border: 12px solid #66DA43;
+    border: 12px solid #66da4300;
     border-radius: 3em;
     box-sizing: border-box;
     position: absolute;
@@ -34,6 +34,7 @@
   }
   
   .box1 {
+    background-color: #66DA43;
     width: 112px;
     height: 48px;
     margin-top: 64px;
@@ -42,6 +43,7 @@
   }
   
   .box2 {
+    background-color: #66DA43;
     width: 48px;
     height: 48px;
     margin-top: 0px;
@@ -50,6 +52,7 @@
   }
   
   .box3 {
+    background-color: #66DA43;
     width: 48px;
     height: 48px;
     margin-top: 0px;
