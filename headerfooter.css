@@ -35,20 +35,25 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .topnav {
+    width: 15%;
+    padding: 0%;
+    border-bottom-right-radius: 2.5em;
+  }
+
   .topnav a {display: none;}
 
-  .topnav a.home {
+  .topnav a.icon {
     float: left;
     display: block;
   }
 
-  .topnav a.icon {
-    float: right;
-    display: block;
+  .footer {
+    text-align: center;
   }
 
-  .topnav {
-    padding: 0%;
+  .footer .viscount {
+    display: none;
   }
 }
 
@@ -69,10 +74,4 @@
 /* Change the color of links on hover */
 .footer a:hover {
   color: #66DA43;
-}
-
-/* Add a color to the active/current link */
-.footer a.active {
-  color: #66DA43;
-  font-weight: bold;
 }
