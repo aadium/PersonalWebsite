@@ -19,6 +19,7 @@ color: white;
 
 .socialbar {
     background-color: #191919;
+    border-radius: 5em;
     width: 90%;
     transition: 0.2s;
     box-shadow: 5px 7px 15px rgb(0, 0, 0),
