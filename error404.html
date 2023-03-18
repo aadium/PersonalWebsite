@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>      
+      .four{
+      	display:inline-block;
+        font-family:cursive;
+        font-size: 35vw;
+      }
+      #first-four{
+      	position:absolute;
+        top: -5vw;
+        left: 12vw;
+        color: #66DA43;
+      }
+      #second-four{
+      	position:absolute;
+        left: 65vw;
+        top: -4vw;
+        color: #66DA43;
+      }
+      .face {
+      	display:inline-block;
+        position: absolute;
+        top:7.2vw;
+        height: 23vw;
+        width: 15vw;
+        border: 2vw solid #66DA43;
+        border-radius: 15%;
+        left: 40.3vw;
+        background-color:#171717;
+        z-index:0;
+      }
+      .eye {
+        display: inline-block;
+        background-color: white;
+        height: 1.3vw;
+        width: 1.3vw;
+        border-radius: 100%;
+        animation: blink 3s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes blink {
+        from {
+          transform: rotateX(0deg);
+        }
+        to {
+          transform: rotateX(180deg);
+        }
+      }
+      #left-eye {
+        position: absolute;
+        left: 4vw;
+        top: 4.5vw;
+        
+        z-index:0;
+      }
+      #right-eye {
+        position: absolute;
+        left: 10vw;
+        top: 4.5vw;
+      }
+      .mouth{
+      	position:absolute;
+        left:4vw;
+        top:15vw;
+      	display:block;
+      	height:0.5vw;
+        width:7vw;
+        border-radius: 5em;
+        background-color:white;
+      }
+      #backbutton{
+        position: absolute;
+        top: 42vw;
+        left: 37.5vw;
+        background-color:#66DA43;
+        border: 5px solid rgba(0, 0, 0, 0);
+        border-radius: 5em;
+        color: black;
+        padding: 35px 52px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 32px;
+        font-family: cursive;
+        transition: 0.2s;
+      }
+      #backbutton:hover{
+        background-color: rgba(0, 0, 0, 0);
+        border: 5px solid #66DA43;
+        color: #66DA43;
+    }
+
+    #backbutton:active {
+        background-color: #66DA43;
+        border: 5px solid rgba(0, 0, 0, 0);
+        color: black;
+    }
+    </style>
+  </head>
+  <body bgcolor=#171717>
+    <div class = "four" id = "first-four">4</div>
+    <div class="face">
+      <div class="eye" id="left-eye"></div>
+      <div class="eye" id="right-eye"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class = "four" id = "second-four">4</div>
+    <button id="backbutton" onclick="history.back()">Return to website</button>
+  </body>
+</html>
