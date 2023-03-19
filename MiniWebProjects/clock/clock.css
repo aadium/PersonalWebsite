@@ -1,0 +1,68 @@
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 10px double white;
+  border-radius:50%;
+  margin:50px auto;
+  position: relative;
+  padding:2rem;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.hhand {
+  width:25%;
+  height:10px;
+  background-image: linear-gradient(90deg,white, #66DA43);
+  border-radius: 3em;
+  border: none;
+  position: absolute;
+  top:50%;
+  left: 25%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.1s;
+}
+
+.mhand {
+  width:40%;
+  height:8px;
+  background-image: linear-gradient(90deg,white, #66DA43);
+  border-radius: 3em;
+  border: none;
+  position: absolute;
+  top:50%;
+  left: 10%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.1s;
+}
+
+.shand {
+  width:50%;
+  height:5px;
+  background-image: linear-gradient(90deg,white, #66DA43);
+  border-radius: 3em;
+  position: absolute;
+  top:50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: transform 1s linear;
+}
+
+.pin {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  background:#66DA43;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
