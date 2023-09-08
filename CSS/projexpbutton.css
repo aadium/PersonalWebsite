@@ -1,0 +1,43 @@
+button {
+  background-color:#66DA43;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 5em;
+  color: black;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+button:hover{
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #66DA43;
+  color: #66DA43;
+}
+
+button:active {
+  background-color: #66DA43;
+  border: 2px solid rgba(0, 0, 0, 0);
+  color: black;
+}
+
+button#mobilmenu {
+  background-color:#66da4300;
+  border: none;
+  color: #ffffff;
+  width: 450px;
+  height: 75px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  transition: 0.2s;
+}
+
+button#mobilmenu:hover{
+  background-color:#66da4300;
+  color: #66DA43;
+}

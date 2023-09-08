@@ -1,0 +1,17 @@
+.card {
+    width: 85%;
+    height: auto;
+    background-image: radial-gradient(#171717, #212121);
+    border-radius: 40px;
+    transition: 0.2s;
+    box-shadow: 15px 15px 30px rgb(0, 0, 0),
+                -15px -15px 30px rgb(58, 58, 58);
+}
+
+.card2 {
+    width: 85%;
+    border-radius: 50px;
+    background-image: radial-gradient(#171717, #212121);
+    box-shadow: inset 15px 15px 25px rgb(0, 0, 0),
+                inset -15px -15px 25px rgb(58, 58, 58);
+}

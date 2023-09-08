@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link rel="icon" type="image/x-icon" href="../images/auwhite.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/headerfooter.css">
+    <link rel="stylesheet" href="../CSS/projexpbutton.css">
+    <link rel="stylesheet" href="../CSS/socialbuttons.css">
+    <link rel="stylesheet" href="../CSS/loader.css">
+    <link rel="stylesheet" href="../CSS/card.css">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        color: white;
+        background-image: linear-gradient(180deg, #212121, #171717);
+      }
+
+      h2 {
+        color: #66DA43;
+      }
+
+      h1 {
+        color: #66DA43;
+      }
+
+      @media screen and (max-width: 1000px) {
+        
+        img {display: none;}
+
+      }
+    </style>
+    <script>
+      window.onload = function() {
+        document.body.style.opacity = 1;
+      };
+
+      window.addEventListener("load", function() {
+        setTimeout(function(){
+          var loader = document.querySelector(".loader-wrapper");
+          loader.classList.add("fade-out");
+        }, 750); // adjust the delay time as needed
+      });
+    </script>
+</head>
+<body bgcolor="#171717">
+  <div class="topnav">
+    <table width = 100% align="center" cellpadding="5">
+      <tr>
+        <td>
+          <a href="../index.html" class="image-link">
+            <img src="../images/auwhite.png" height="35" class="image"> | <B>Aadi Umrani</B> | Biomedical Engineering Student
+          </a>
+        </td>
+        <td align="right">
+          <a href="../index.html">Home</a>
+          <a href="../pages/projects.html" class="active">Projects</a>
+          <a href="../pages/experience.html">Experiences</a>
+          <a href="../pages/chat.html">Chat</a>
+          <a href="../pages/mobilmenu.html" class="icon">
+            <i class="fa fa-bars"></i>
+          </a>                       
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <center><font size = "72" color = #66DA43>My Projects</font>
+  <br>
+  <br>
+  <div id="projects-container">
+      <!-- Dynamically generated project cards will be placed here -->
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  <script src="../JavaScript/projects.js"></script>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="footer">
+    <font color="white">
+    <table align = "center" width = 95%>
+      <tr>
+        <td>
+          <h4><font color=#66DA43> E-Mail I.D.</font></h4>
+          <font size="2">
+            <p><a href="mailto:apumrani@uwaterloo.ca" >apumrani@uwaterloo.ca</a> <font color = #66DA43><b> | </b></font> <a href="mailto:aadi.p.um@gmail.com">aadi.p.um@gmail.com</a></p>
+            </font>
+        </td>
+        <td align="right">
+          <div class="viscount">
+            <p>Number of Visitors:</p>
+            <div id="sfcga21du9r6nr4be5xph2qdcgnpy64yyh4"></div><script type="text/javascript" src="https://counter4.optistats.ovh/private/counter.js?c=ga21du9r6nr4be5xph2qdcgnpy64yyh4&down=async" async></script><br><noscript><img src="https://counter4.optistats.ovh/private/freecounterstat.php?c=ga21du9r6nr4be5xph2qdcgnpy64yyh4" border="0" title="free counters" alt="free counters"></noscript>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
