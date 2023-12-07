@@ -1,145 +1,111 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Chat</title>
-    <link rel="icon" type="image/x-icon" href="../images/auwhite.png">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../CSS/headerfooter.css">
-    <link rel="stylesheet" href="../CSS/socialbuttons.css">
-    <link rel="stylesheet" href="../CSS/chat.css">
-    <link rel="stylesheet" href="../CSS/loader.css">
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
 
-      body {
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-        background-image: linear-gradient(180deg, #212121, #171717);
-      }
+<head>
+  <meta charset="utf-8">
+  <title>Chat</title>
+  <link rel="icon" type="image/x-icon" href="../images/auwhite.png">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../CSS/headerfooter.css">
+  <link rel="stylesheet" href="../CSS/socialbuttons.css">
+  <link rel="stylesheet" href="../CSS/chat.css">
+  <link rel="stylesheet" href="../CSS/loader.css">
+  <link rel="stylesheet" href="../CSS/pages.css">
+</head>
 
-      h2 {
-        color: #66DA43;
-      }
-
-      h1 {
-        color: #66DA43;
-      }
-
-      @media screen and (max-width: 1000px) {
-        
-        img {display: none;}
-
-      }
-
-      </style>
-    <script>
-      window.onload = function() {
-        document.body.style.opacity = 1;
-      };
-
-      window.addEventListener("load", function() {
-        setTimeout(function(){
-          var loader = document.querySelector(".loader-wrapper");
-          loader.classList.add("fade-out");
-        }, 750); // adjust the delay time as needed
-      });
-    </script>
-
-  </head>
-  
 <body>
-  <div class="loader-wrapper" id="load">
-    <div class="loader">
-      <div class="box1"></div>
-      <div class="box2"></div>
-      <div class="box3"></div>
+  <div class="topnav">
+    <table width=100% align="center" cellpadding="5">
+      <tr>
+        <td align="right">
+          <a href="../index.html">Home</a>
+          <a href="../pages/projects.html">Projects</a>
+          <a href="../pages/experience.html">Experiences</a>
+          <a href="pages/chat.html" class="active">Chat</a>
+          <a href="../pages/mobilmenu.html" class="icon">
+            <i class="fa fa-bars"></i>
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <center>
+    <div class="main-block">
+      <form name="Chat" action="submissionsuccess.html" method="POST" data-netlify="true">
+        <h1>Chat with Me</h1>
+        <div class="info">
+          <table align="center">
+            <tr align="center">
+              <td>
+                <input type="text" required name="fname" placeholder="First name">
+              </td>
+              <td>
+                <input type="text" required name="lname" placeholder="Last name">
+              </td>
+            </tr>
+            <tr align="center">
+              <td colspan="2">
+                <input type="text" required name="email" placeholder="E-Mail Address">
+              </td>
+            </tr>
+            <tr align="center">
+              <td colspan="2">
+                <input type="text" name="phone" placeholder="Phone Number">
+              </td>
+            </tr>
+            <tr align="center">
+              <td colspan="2">
+                <input type="text" required name="message" placeholder="Message">
+              </td>
+            </tr>
+            <tr align="center">
+              <td colspan="2">
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path fill="currentColor"
+                      d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                    </path>
+                  </svg>
+                  <span>Send</span>
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </form>
     </div>
-  </div> 
-    <font color = "white">
-        
-      <div class="topnav">
-        <table width = 100% align="center" cellpadding="5">
-          <tr>
-            <td align="right">
-              <a href="../index.html">Home</a>
-              <a href="../pages/projects.html">Projects</a>
-              <a href="../pages/experience.html">Experiences</a>
-              <a href="pages/chat.html" class="active">Chat</a>
-              <a href="../pages/mobilmenu.html" class="icon">
-                <i class="fa fa-bars"></i>
-              </a>                        
-            </td>
-          </tr>
-        </table>
-      </div>
-        <center>
-        <div class="main-block">
-          <form name="Chat" action="submissionsuccess.html" method="POST" data-netlify="true">
-              <h1>Chat with Me</h1>
-              <div class="info">
-                <table align="center">
-                    <tr align="center">
-                        <td>
-                            <input type="text" required name="fname" placeholder="First name">
-                        </td>
-                        <td>
-                            <input type="text" required name="lname" placeholder="Last name">
-                        </td>
-                    </tr>
-                    <tr align="center">
-                        <td colspan="2">
-                            <input type="text" required name="email" placeholder="E-Mail Address">
-                        </td>
-                    </tr>
-                    <tr align="center">
-                        <td colspan="2">
-                            <input type="text" name="phone" placeholder="Phone Number">
-                        </td>
-                    </tr>
-                    <tr align="center">
-                      <td colspan="2">
-                        <input type="text" required name="message" placeholder="Message">
-                      </td>
-                    </tr>
-                    <tr align="center">
-                      <td colspan="2">
-                        <button>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                <path fill="none" d="M0 0h24v24H0z"></path>
-                                <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
-                              </svg>
-                              <span>Send</span>
-                        </button>
-                      </td>
-                    </tr>
-                </table>
-              </div>
-            </form>
-          </div>
-    </center>
+  </center>
 
-    <div class="footer">
-        <font color="white">
-        <table align = "center" width = 95%>
-          <tr>
-            <td>
-              <h4><font color=#66DA43> E-Mail I.D.</font></h4>
-              <font size="2">
-              <p><a href="mailto:apumrani@uwaterloo.ca" >apumrani@uwaterloo.ca</a> <font color = #66DA43><b> | </b></font> <a href="mailto:aadi.p.um@gmail.com">aadi.p.um@gmail.com</a></p>
-              </font>
-            </td>
-            <td align="right">
-              <div class="viscount">
-                <p>Number of Visitors:</p>
-                <div id="sfcga21du9r6nr4be5xph2qdcgnpy64yyh4"></div><script type="text/javascript" src="https://counter4.optistats.ovh/private/counter.js?c=ga21du9r6nr4be5xph2qdcgnpy64yyh4&down=async" async></script><br><noscript><img src="https://counter4.optistats.ovh/private/freecounterstat.php?c=ga21du9r6nr4be5xph2qdcgnpy64yyh4" border="0" title="free counters" alt="free counters"></noscript>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
+  <div class="footer">
+    <font color="white">
+      <table align="center" width=95%>
+        <tr>
+          <td>
+            <h4>
+              <font color=#66DA43> E-Mail I.D.</font>
+            </h4>
+            <font size="2">
+              <p><a href="mailto:apumrani@uwaterloo.ca">apumrani@uwaterloo.ca</a>
+                <font color=#66DA43><b> | </b></font> <a href="mailto:aadi.p.um@gmail.com">aadi.p.um@gmail.com</a>
+              </p>
+            </font>
+          </td>
+          <td align="right">
+            <div class="viscount">
+              <p>Number of Visitors:</p>
+              <div id="sfcga21du9r6nr4be5xph2qdcgnpy64yyh4"></div>
+              <script type="text/javascript"
+                src="https://counter4.optistats.ovh/private/counter.js?c=ga21du9r6nr4be5xph2qdcgnpy64yyh4&down=async"
+                async></script><br><noscript><img
+                  src="https://counter4.optistats.ovh/private/freecounterstat.php?c=ga21du9r6nr4be5xph2qdcgnpy64yyh4"
+                  border="0" title="free counters" alt="free counters"></noscript>
+            </div>
+          </td>
+        </tr>
+      </table>
+  </div>
 </body>
+
 </html>

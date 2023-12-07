@@ -1,137 +1,97 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Menu</title>
-    <link rel="icon" type="image/x-icon" href="../images/auwhite.png">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../CSS/headerfooter.css">
-    <link rel="stylesheet" href="../CSS/button.css">
-    <link rel="stylesheet" href="../CSS/socialbuttons.css">
-    <link rel="stylesheet" href="../CSS/loader.css">
-    <style>
-      html {
-        scroll-behavior: smooth;
+
+<head>
+  <meta charset="utf-8">
+  <title>Menu</title>
+  <link rel="icon" type="image/x-icon" href="../images/auwhite.png">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../CSS/headerfooter.css">
+  <link rel="stylesheet" href="../CSS/button.css">
+  <link rel="stylesheet" href="../CSS/socialbuttons.css">
+  <link rel="stylesheet" href="../CSS/loader.css">
+  <link rel="stylesheet" href="../CSS/pages.css">
+  <style>
+    .menu {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #menu {
+      background-color: #19191900;
+    }
+  </style>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
       }
+    }
+  </script>
+</head>
 
-      body {
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-        background-color: #191919;
-      }
-
-      h2 {
-        color: #66DA43;
-      }
-
-      h1 {
-        color: #66DA43;
-      }
-
-      a {
-        color: white;
-        transition: 0.2s;
-      }
-
-      a:hover {
-        color: #66DA43;
-      }
-
-      .menu {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      #menu {
-        background-color: #19191900;
-      }
-      </style>
-    <script>
-        window.onload = function() {
-        document.body.style.opacity = 1;
-      };
-
-      window.addEventListener("load", function() {
-        setTimeout(function(){
-          var loader = document.querySelector(".loader-wrapper");
-          loader.classList.add("fade-out");
-        }, 100); // adjust the delay time as needed
-      });
-
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
-
-  </head>
-  
 <body>
-  <div class="loader-wrapper" id="load">
-    <div class="loader">
-    </div>
-  </div> 
-    <font color = "white">
-      <div class="topnav">  
-        <table width = 100% align="center" cellpadding="5">
-          <tr>
-            <td>
-              <a href="../index.html" class="image-link">
-                <img src="../images/auwhite.png" height="35" class="image"> | <B>Aadi Umrani</B> | Biomedical Engineering Student
-              </a>
+  <div class="topnav">
+    <table width=100% align="center" cellpadding="5">
+      <tr>
+        <td>
+          <a href="../index.html" class="image-link">
+            <img src="../images/auwhite.png" height="35" class="image"> | <B>Aadi Umrani</B> | Biomedical Engineering
+            Student
+          </a>
 
-            </td>
-            <td align="right">
-              <a href="../index.html">Home</a>
-              <a href="../pages/projects.html">Projects</a>
-              <a href="../pages/experience.html">Experiences</a>
-              <a href="pages/chat.html" class="active">Chat</a>
-                <a class="icon" onclick="history.back()">
-                  <i class="fa fa-arrow-circle-left"></i>
-                </a>                       
-            </td>
-          </tr>
-        </table>
-      </div>
+        </td>
+        <td align="right">
+          <a href="../index.html">Home</a>
+          <a href="../pages/projects.html">Projects</a>
+          <a href="../pages/experience.html">Experiences</a>
+          <a href="pages/chat.html" class="active">Chat</a>
+          <a class="icon" onclick="history.back()">
+            <i class="fa fa-arrow-circle-left"></i>
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
 
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class="menu">
-        <font size = "72">
-          <table align = "right" width = 75% cellpadding = 20%>
-              <tr>
-                  <td>
-                      <a href="../index.html"><button id="mobilmenu">Home</button></a>
-                  </td>
-              </tr>
-              <tr>
-                  <td>
-                      <a href="../pages/projects.html"><button id="mobilmenu">Projects</button></a>
-                  </td>
-              </tr>
-              <tr>
-                  <td>
-                      <a href="../pages/experience.html"><button id="mobilmenu">Experiences</button></a>
-                  </td>
-              </tr>
-              <tr>
-                  <td>
-                      <a href="pages/chat.html"><button id="mobilmenu">Chat</button></a>
-                  </td>
-              </tr>
-            </table>
-          </font>
-      </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="menu">
+    <font size="72">
+      <table align="right" width=75% cellpadding=20%>
+        <tr>
+          <td>
+            <a href="../index.html"><button id="mobilmenu">Home</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../pages/projects.html"><button id="mobilmenu">Projects</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../pages/experience.html"><button id="mobilmenu">Experiences</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="pages/chat.html"><button id="mobilmenu">Chat</button></a>
+          </td>
+        </tr>
+      </table>
+    </font>
+  </div>
+</body>
 
-    </html>
+</html>
