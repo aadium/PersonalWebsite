@@ -30,7 +30,6 @@ fetch('../CSV/projects.csv')
                                                     ${descriptionListItems} <!-- Insert the list items here -->
                                                 </ul>
                                                 <p><a href="${project.CodeLink}" target="_blank"><button>${project.ButtonName}</button></a></p>
-                                                ${project.SecondCodeLink ? `<p><a href="${project.SecondCodeLink}" target="_blank"><button>${project.SecondButtonName}</button></a></p>` : ''}
                                                 <br>
                                             </td>
                                             <td align="right">
